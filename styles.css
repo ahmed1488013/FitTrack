@@ -1,0 +1,105 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F0FFFF;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #FF6F61;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.workout-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.workout-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 600px;
+    width: 100%;
+}
+
+.workout-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #F43F5E;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 0.5rem 0;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #FF6F61;
+    outline: none;
+}
+
+button.log-btn {
+    background-color: #FF6F61;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+button.log-btn:hover {
+    background-color: #FF4C40;
+}
+
+.progress {
+    margin-top: 1rem;
+    background-color: #32CD32;
+    height: 20px;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.motivation {
+    text-align: center;
+    margin-top: 2rem;
+    display: none;
+}
+
+footer {
+    background-color: #FF6F61;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .workout-list {
+        grid-template-columns: 1fr;
+    }
+}
